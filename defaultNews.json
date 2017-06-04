@@ -1,0 +1,341 @@
+﻿[
+  {
+    "id": 1,
+    "title": "Terrorist attack",
+    "comments": [
+      {
+        "id": 1,
+        "text": "This is horrible!"
+      },
+      {
+        "id": 2,
+        "text": "I am truly appalled."
+      }
+    ],
+    "rating": 8
+  },
+  {
+    "id": 2,
+    "title": "Spongegar is the new hit",
+    "comments": [
+      {
+        "id": 1,
+        "text": "LMAO, so funny!"
+      },
+      {
+        "id": 2,
+        "text": "This is the meme of the century!"
+      },
+      {
+        "id": 3,
+        "text": "I don't understand what's so funny."
+      }
+    ],
+    "rating": 10
+  },
+  {
+    "id": 3,
+    "title": "How to store fruit",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Fruit is yummy but this article sucks."
+      },
+      {
+        "id": 2,
+        "text": "Oh well, better luck next time."
+      }
+    ],
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "title": "Bolton wins 3-1",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Go Wanderers!!!"
+      }
+    ],
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "title": "Crash is trying to learn angular!",
+    "comments": [
+      {
+        "id": 1,
+        "text": "It's not very effective!"
+      },
+      {
+        "id": 2,
+        "text": "What does this function do?"
+      },
+      {
+        "id": 3,
+        "text": "Help, I need somebody, help, not just anybody..."
+      },
+      {
+        "id": 4,
+        "text": "Never gonna give you up, never gonna let you down!"
+      },
+      {
+        "id": 5,
+        "text": "I better read the docs first."
+      }
+    ],
+    "rating": 7
+  },
+  {
+    "id": 6,
+    "title": "FESB to fire Julije Ozegovic",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Impossibru, I don't believe it."
+      },
+      {
+        "id": 2,
+        "text": "Celebration time come on !"
+      }
+    ],
+    "rating": 8
+  },
+  {
+    "id": 7,
+    "title": "No makeup is the new look",
+    "comments": [
+      {
+        "id": 1,
+        "text": "How do I look?"
+      },
+      {
+        "id": 2,
+        "text": "Yeah, you wish. I can't live without eyeshadow."
+      },
+      {
+        "id": 3,
+        "text": "Oh no you don't, I make a living off of that."
+      }
+    ],
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "title": "LOTR is the best ever, period.",
+    "comments": [
+      {
+        "id": 1,
+        "text": "R2D2 disagrees."
+      },
+      {
+        "id": 2,
+        "text": "Well duh, masterpiece of filmography."
+      },
+      {
+        "id": 3,
+        "text": "Well it's great but I don't know about best ever."
+      }
+    ],
+    "rating": 6
+  },
+  {
+    "id": 9,
+    "title": "Shock at the parlimaent: PM leaves meeting",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Who cares?"
+      },
+      {
+        "id": 2,
+        "text": "What a totally bombastic and useless article."
+      }
+    ],
+    "rating": 2
+  },
+  {
+    "id": 10,
+    "title": "Top 10 guitar solos",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Excellent choices, but I would include Sultans of swing too."
+      },
+      {
+        "id": 2,
+        "text": "OMG, I just love the solo in Free Bird!"
+      },
+      {
+        "id": 3,
+        "text": "I can never decide between Led Zeppelin and Iron Maiden."
+      },
+      {
+        "id": 4,
+        "text": "This article rocks, I love what Clapton does in his songs too!"
+      }
+    ],
+    "rating": 9
+  },
+  {
+    "id": 11,
+    "title": "The best pancake recipe",
+    "comments": [
+      {
+        "id": 1,
+        "text": "You just copied this from coolinarika. Not cool."
+      },
+      {
+        "id": 2,
+        "text": "Tried it out, disgusting!"
+      }
+    ],
+    "rating": 1
+  },
+  {
+    "id": 12,
+    "title": "Another terrorist attack downtown",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Who could do such a thing?!"
+      },
+      {
+        "id": 2,
+        "text": "Stupid politics and everything."
+      },
+      {
+        "id": 3,
+        "text": "I am literally scared for my life right now..."
+      }
+    ],
+    "rating": 5
+  },
+  {
+    "id": 13,
+    "title": "10 life hacks you must know!",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Wow, some hacks. Pffft."
+      },
+      {
+        "id": 2,
+        "text": "How about no?"
+      }
+    ],
+    "rating": 2
+  },
+  {
+    "id": 14,
+    "title": "Beautiful swans in the park today",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Awww, they're so cute!"
+      }
+    ],
+    "rating": 5
+  },
+  {
+    "id": 15,
+    "title": "Announcement (comments disabled)",
+    "comments": [ ],
+    "rating": 5
+  },
+  {
+    "id": 16,
+    "title": "School postponed due to snow.",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Can this city even afford a snow plow?"
+      },
+      {
+        "id": 2,
+        "text": "Woohoo snowballing time!!!"
+      },
+      {
+        "id": 3,
+        "text": "Oh man, they'll put catch up on saturday again."
+      }
+    ],
+    "rating": 5
+  },
+  {
+    "id": 17,
+    "title": "Action at the supermarket!",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Oooh, cheap veal, now that's what I like"
+      },
+      {
+        "id": 2,
+        "text": "What kind of discounts or these, 1%?"
+      }
+    ],
+    "rating": 6
+  },
+  {
+    "id": 18,
+    "title": "New smartphone hits the market",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Looks promising, can't wait to test it!"
+      },
+      {
+        "id": 2,
+        "text": "Whoa, nice article, props to the author!"
+      },
+      {
+        "id": 3,
+        "text": "I just bought a phone not knowing about this one... great."
+      },
+      {
+        "id": 4,
+        "text": "I really like the design!"
+      }
+    ],
+    "rating": 7
+  },
+  {
+    "id": 19,
+    "title": "Additional pollution from tanker imminent",
+    "comments": [
+      {
+        "id": 1,
+        "text": "Just great, if the damage caused wasn't big enough already"
+      },
+      {
+        "id": 2,
+        "text": "How could have this happened, I don't know what to say"
+      },
+      {
+        "id": 3,
+        "text": "At least they're not hiding it from us, the truth needs to be known!"
+      }
+    ],
+    "rating": 6
+  },
+  {
+    "id": 20,
+    "title": "Look at the little squirrel go",
+    "comments": [
+      {
+        "id": 1,
+        "text": "'Video isn't available in your country'. Where do I live, Venus?"
+      },
+      {
+        "id": 2,
+        "text": "It isn't even the least bit funny."
+      },
+      {
+        "id": 3,
+        "text": "Poor thing, and you're trying to make fun of it!"  
+      }
+    ],
+    "rating": 3
+  }
+]
