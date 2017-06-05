@@ -1,0 +1,9 @@
+﻿<h1>Articles:</h1>
+<div ng-repeat="article in articles">
+    {{article.title}}
+    <a ng-click="favorite(article)">Favorite</a>
+    <a ui-sref="article-details({id: article.id})">Details</a>
+</div>
+<div ng-click="showMore()" ng-if="!allShown">Load more articles</div>
+<div ng-if="allShown">All of the articles are loaded.</div>
+<div ui-sref="favorite-list">Go to favorites</div>

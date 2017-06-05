@@ -1,0 +1,12 @@
+﻿{{chosenArticle.id}}
+{{chosenArticle.title}}
+{{chosenArticle.rating}}
+<div ng-if="chosenArticle.rating<6">Bad</div>
+<div ng-if="chosenArticle.rating>5 && article.rating<9">Solid</div>
+<div ng-if="chosenArticle.rating>8">Excellent</div>
+<div ng-repeat="comment in chosenArticle">
+    {{comment.id}}
+    {{comment.text}}
+</div>
+<a ng-click="favorite(article)">Favorite</a>
+<a ui-sref="home">Back to articles</a>

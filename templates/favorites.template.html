@@ -1,0 +1,10 @@
+﻿<h1>Favorites:</h1>
+<div ng-repeat="article in articles | favorited">
+    {{article.title}}
+    <div ng-repeat="comment in article | limitTo:2">
+        {{comment.id}}
+        {{comment.text}}
+    </div>
+    <a ng-click="unfavorite(article)">Unfavorite</a>
+</div>
+<a ui-sref="home">Back to articles</a>
