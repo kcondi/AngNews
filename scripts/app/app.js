@@ -12,17 +12,17 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
                 controller: 'HomeController',
                 templateUrl: './templates/home.template.html'
             })
-        .state('favorite-list',
-            {
-                url: '/favorite-list',
-                controller: 'FavoriteListController',
-                templateUrl: './templates/favorites.template.html'
-            })
         .state('article-details',
             {
                 url: '/article-details/:id',
                 controller: 'ArticleDetailsController',
                 templateUrl: './templates/details.template.html'
+            })
+        .state('favorite-list',
+            {
+                url: '/favorite-list',
+                controller: 'FavoriteListController',
+                templateUrl: './templates/favorites.template.html'
             });
 });
 
@@ -44,3 +44,10 @@ app.controller('HomeController',
         }
     });
 
+app.controller('ArticleDetailsController',
+    function ($scope, $http, $state, $stateParams) {
+        $http.get('defaultNews.json').then(function(articles) {
+            $scope.allArticles = articles.data;
+            $scope.chosenArticle = $scope.allArticles[$stateParams.id - 1];
+        });
+    });
