@@ -13,5 +13,5 @@ Comments:
     Text: {{comment.text}}
 </div>
 <br/>
-<a ng-click="favorite(article)">Favorite</a>
+<a ng-click="favoriteArticle({articleToFavoriteId: chosenArticle.id})">Favorite</a>
 <a ui-sref="home">Back to articles</a>

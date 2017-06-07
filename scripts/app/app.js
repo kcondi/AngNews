@@ -3,6 +3,11 @@
     'LocalStorageModule'
 ]);
 
+app.run(function (localStorageService) { 
+    if (!angular.fromJson(localStorageService.get("favoritedArticles")))
+        localStorageService.set("favoritedArticles", angular.toJson([]));
+});
+
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $stateProvider
@@ -27,28 +32,49 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 });
 
 app.controller('HomeController',
-    function ($scope, $http) {
+    function ($scope, $http, FavoriteService) {
         var separateArticles;
         var counter = 1;
         $scope.allShown = false;
+
+        $scope.favoriteArticle = function (articleToFavoriteId) {
+            FavoriteService.favoriteArticle(articleToFavoriteId);
+        }
+
         $http.get('defaultNews.json').then(function(articles) {
             separateArticles = _.chunk(articles.data, 6);
             $scope.articles = separateArticles[0];
         });
+
         $scope.showMore = function () {
             $scope.articles = _.concat($scope.articles, separateArticles[counter++]);
             if (counter === separateArticles.length) {
-                $scope.allShown = true;
+                $scope.allArticlesAreShown = true;
                 return;
             }
         }
     });
 
 app.controller('ArticleDetailsController',
-    function ($scope, $http, $state, $stateParams) {
-        $http.get('defaultNews.json').then(function(articles) {
+    function ($scope, $http, $state, $stateParams, FavoriteService) {
+
+        $scope.favoriteArticle = function (articleToFavoriteId) {
+            FavoriteService.favoriteArticle(articleToFavoriteId);
+        }
+
+        $http.get('defaultNews.json').then(function (articles) {
             var allArticles = articles.data;
             $scope.chosenArticle = allArticles[$stateParams.id - 1];
         });
     });
 
+app.service('FavoriteService', function (localStorageService) {
+    this.favoriteArticle = function (articleToFavoriteId) {
+        var currentFavoritesIds = angular.fromJson(localStorageService.get("favoritedArticles"));
+        console.log(currentFavoritesIds);
+        console.log(currentFavoritesIds.indexOf(articleToFavoriteId));
+        if (currentFavoritesIds.indexOf(articleToFavoriteId) === -1)
+            currentFavoritesIds.push(articleToFavoriteId);
+            localStorageService.set("favoritedArticles", currentFavoritesIds);
+    }
+});
