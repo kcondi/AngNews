@@ -47,7 +47,8 @@ app.controller('HomeController',
 app.controller('ArticleDetailsController',
     function ($scope, $http, $state, $stateParams) {
         $http.get('defaultNews.json').then(function(articles) {
-            $scope.allArticles = articles.data;
-            $scope.chosenArticle = $scope.allArticles[$stateParams.id - 1];
+            var allArticles = articles.data;
+            $scope.chosenArticle = allArticles[$stateParams.id - 1];
         });
     });
+
