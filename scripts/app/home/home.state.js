@@ -1,7 +1,5 @@
-﻿(function() {
-    var app = angular.module('app');
-    app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-        $locationProvider.html5Mode(true);
+﻿var app = angular.module('app');
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         $stateProvider
             .state('home',
                 {
@@ -10,4 +8,3 @@
                     templateUrl: '/scripts/app/home/home.template.html'
                 });
     });
-})
