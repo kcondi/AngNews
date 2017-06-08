@@ -1,4 +1,5 @@
-﻿app.service('FavoriteService', function (localStorageService, GetCurrentFavoritesService) {
+﻿var app = angular.module('app');
+app.service('FavoriteService', function (localStorageService, GetCurrentFavoritesService) {
     this.favoriteArticle = function (articleToFavoriteId) {
         var currentFavoritesIds = GetCurrentFavoritesService.getFavorites();
         if (currentFavoritesIds.indexOf(articleToFavoriteId) === -1)

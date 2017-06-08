@@ -1,4 +1,5 @@
-﻿app.controller('HomeController',
+﻿var app = angular.module('app');
+app.controller('HomeController',
     function ($scope, $http, GetDefaultArticlesService, FavoriteService) {
         var separateArticles;
         var loadMoreArticlesClicksCounter = 1;

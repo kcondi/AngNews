@@ -1,10 +1,13 @@
-﻿app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
-    $stateProvider
-        .state('home',
-            {
-                url: '/',
-                controller: 'HomeController',
-                templateUrl: './app/home/home.template.html'
-            });
-});
+﻿(function() {
+    var app = angular.module('app');
+    app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+        $stateProvider
+            .state('home',
+                {
+                    url: '/',
+                    controller: 'HomeController',
+                    templateUrl: '/scripts/app/home/home.template.html'
+                });
+    });
+})

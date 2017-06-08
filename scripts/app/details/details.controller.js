@@ -1,4 +1,5 @@
-﻿app.controller('ArticleDetailsController',
+﻿var app = angular.module('app');
+app.controller('ArticleDetailsController',
     function ($scope, $http, $state, $stateParams, GetDefaultArticlesService, FavoriteService) {
 
         var defaultArticlesPromise = GetDefaultArticlesService;

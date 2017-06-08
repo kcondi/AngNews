@@ -1,4 +1,5 @@
-﻿app.controller('FavoriteListController',
+﻿var app = angular.module('app');
+app.controller('FavoriteListController',
     function ($scope, $http, localStorageService, GetDefaultArticlesService, GetCurrentFavoritesService) {
 
         var defaultArticlesPromise = GetDefaultArticlesService;

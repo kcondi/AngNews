@@ -1,4 +1,5 @@
-﻿app.run(function (localStorageService) {
+﻿var app = angular.module('app');
+app.run(function (localStorageService) {
     if (!angular.fromJson(localStorageService.get("favoritedArticles")))
         localStorageService.set("favoritedArticles", angular.toJson([]));
 });

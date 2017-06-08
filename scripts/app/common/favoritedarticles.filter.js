@@ -1,4 +1,5 @@
-﻿app.filter('favoritedArticlesFilter',
+﻿var app = angular.module('app');
+app.filter('favoritedArticlesFilter',
     function (localStorageService) {
         return function (articleList) {
             var currentFavoritesIds = angular.fromJson
