@@ -3,14 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <title>AngNews</title>
+
     <script src="scripts/vendor/angular.js"></script>
     <script src="scripts/vendor/angular-local-storage.js"></script>
     <script src="scripts/vendor/angular-ui-router.js"></script>
     <script src="scripts/vendor/lodash.js"></script>
-    <script src="scripts/app/app.js"></script>
+    
+    <script src="scripts/app/app.module.js"></script>
+    <script src="scripts/app/app.run.js"></script>
+
+    <script src="scripts/app/home/home.state.js"></script>
+    <script src="scripts/app/home/home.controller.js"></script>
+    
+    <script src="scripts/app/details/details.state.js"></script>
+    <script src="scripts/app/details/details.controller.js"></script>
+    
+    <script src="scripts/app/favoritelist/favoritelist.state.js"></script>
+    <script src="scripts/app/favoritelist/favoritelist.state.js"></script>
+    
+    <script src="scripts/app/common/getdefaultarticles.service.js"></script>
+    <script src="scripts/app/common/favorite.service.js"></script>
+    <script src="scripts/app/common/getcurrentfavorites.service.js"></script>
+    <script src="scripts/app/common/favoritedarticles.filter.js"></script>
+
     <base href="/">
+
 </head>
-<body ng-app="app">
-<div ui-view></div>
-</body>
+    <body ng-app="app">
+    <div ui-view></div>
+    </body>
 </html>
