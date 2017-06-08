@@ -1,5 +1,6 @@
 ﻿<h1>Favorites:</h1>
-<div ng-repeat="article in allArticles | filter:isArticleFavorited">
+<input type="text" name="searchboxArticle" ng-model="searchText" ng-change="search()" placeholder="Search favorited articles" /><br />
+<div ng-repeat="article in favoritedArticles | favoritedArticlesFilter">
     Id: {{article.id}}
     <br/>
     Title: {{article.title}}

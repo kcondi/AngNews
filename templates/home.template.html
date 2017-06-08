@@ -1,6 +1,6 @@
 ﻿<h1>Articles:</h1>
 <input type="text" name="searchboxArticle" ng-model="searchText" ng-change="search()" placeholder="Search articles"/><br />
-<div ng-repeat="article in articles">
+<div ng-repeat="article in articles track by $index">
     {{article.title}}
     <button ng-click="favoriteArticle(article.id)">Favorite</button>
     <button ui-sref="article-details({id: article.id})">Details</button>
